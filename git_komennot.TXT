@@ -1,0 +1,66 @@
+git config --global user.name "Your Name"
+git config --global user.email you@example.com
+
+git config -l
+
+git config --global color.ui
+
+git config --global core.editor nano
+
+git config --global push.default matching
+
+git init
+
+git status
+
+git add tiedosto.txt
+
+git commit -m "tiedosto.txt luotu"
+
+git add .
+
+git log
+
+gitk
+
+git add -p
+
+git checkout -- eka.txt
+
+git reset HEAD kolmas.txt
+
+cd 
+mkdir ot-harjoitustyo
+cd ot-harjoitustyo
+git init
+touch README.md
+git add .
+git commit -m"initial commit"
+
+Luo itsellesi tunnus GitHubiin (ellei sinulla jo ole tunnusta)
+Luo uusi repositorio
+uuden repositorion luomistoiminto löytyy vasemman ylänurkan plus-symboolin alta
+Älä laita rastia kohtaan Initialize this repository with a README
+
+varmista, että kohdasta "Quick setup..." on valittu SSH
+
+git remote add origin git@github.com:mluukkai/ot-harjoitustyo.git
+
+git remote -v
+
+git push --set-upstream origin master
+
+luo salausavain antamalla komentoriviltä komento ssh-keygen
+voit vastata kaikkiin kysymyksiin enterillä
+syntyy kaksi salausavainta, salainen ja julkinen. Ne sijoitetaan kotihakemistosi alla olevaan hakemistoon .ssh
+mene hakemistoon ja katso hakemiston sisältöä
+tiedosto id_rsa.pub sisältää julkisen avaimen, se on tarkoitus kopioida githubiin jotta avaimeen perustuva kirjautuminen onnistuisi
+näet tiedoston sisällön komennolla cat id_rsa.pub
+anna komentoriviltä komento ssh-add
+mene GitHubin asetussivulle klikkaamalla oikean yläkulman symbolista ja valitsemalla settings
+valitse settingseistä SSH and GPG keys
+luo uusi SSH-avain
+anna avaimelle joku title (esim. laitos) ja kopioi tiedoston id_rsa.pub sisältö kohtaan key
+Suorita uudelleen push
+
+
