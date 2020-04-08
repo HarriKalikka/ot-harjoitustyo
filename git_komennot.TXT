@@ -1,6 +1,9 @@
+
+--config repo
 git config --global user.name "Your Name"
 git config --global user.email you@example.com
 
+--list config
 git config -l
 
 git config --global color.ui
@@ -9,26 +12,37 @@ git config --global core.editor nano
 
 git config --global push.default matching
 
+--new repo in dir
 git init
 
+--status
 git status
 
+--stage
 git add tiedosto.txt
 
+--commit staged
 git commit -m "tiedosto.txt luotu"
 
+--add all in dir
 git add .
 
+--commitit
 git log
 
+--branch ui
 gitk
 
+--batch mode
 git add -p
 
+--cancel edit in workdir
 git checkout -- eka.txt
 
+--cancel staged
 git reset HEAD kolmas.txt
 
+--example
 cd 
 mkdir ot-harjoitustyo
 cd ot-harjoitustyo
@@ -48,8 +62,10 @@ git remote add origin git@github.com:mluukkai/ot-harjoitustyo.git
 
 git remote -v
 
+--not work without ssh key
 git push --set-upstream origin master
 
+--ssh key
 luo salausavain antamalla komentoriviltä komento ssh-keygen
 voit vastata kaikkiin kysymyksiin enterillä
 syntyy kaksi salausavainta, salainen ja julkinen. Ne sijoitetaan kotihakemistosi alla olevaan hakemistoon .ssh
