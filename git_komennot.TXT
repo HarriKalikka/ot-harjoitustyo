@@ -80,3 +80,28 @@ anna avaimelle joku title (esim. laitos) ja kopioi tiedoston id_rsa.pub sisält�
 Suorita uudelleen push
 
 
+Hiukan lisää ohjetta kun luot uuden repositoryn
+Loggaa githubiin ja luo uusi repository
+Koneellasi jossa koodaat anna kotihakemistossa komento ssh-keygen
+Myös komento ssh-add
+Kotihakemiston .ssh hakemistosta id_rsa.pub sisältö talteen
+Githubissa settings ja etsi paikka jossa voi lisätä uuden ssh avaimen
+Omalla koneella sopivassa hakemistossa: 
+git init
+git config --global user.name "nimesi tänne"
+git config --global user.email "emalisi tänne"
+Kopioi haluamasi filet hakemistoon
+Liitetään hakemisto repositoriin
+git remote add origin git@github.com:HarriKalikka/utilities.git
+git add .
+git commit -m "initial commit"
+git push --set-upsream origin master
+
+
+
+
+
+
+
+
+
