@@ -98,6 +98,57 @@ git commit -m "initial commit"
 git push --set-upsream origin master
 
 
+Yleensä rerositoria editoi useampi ja haaroja on myös useita.
+Tilanne jossain vaiheessa aiheuttaa konfliktin, jota git ei 
+automaattisesti selvitä. Jotkin tiedostoista on editoitava ja
+muutokset uudellen kommittoitava.
+Alla mahdollinen skenario.
+Tarkista konfiguraatiotiedot
+Ainakin username ja email asetettu
+git config -l
+Helppi checkout komennosta
+git help checkout
+Luodaan uusi haara ja siirrytään siihen
+git checkout -b test
+Listataan haarat
+git branch --list
+Aseta upstearm haara
+git push -u origin test
+Tehdään toinen uusi haara
+git checkout -b new_temp
+git branch --list
+git push -u origin new-temp
+Tee uusi tiedosto ja lisää muutokset stageen ja committoi
+ja push remote repositoriin
+git add .
+git commit -m "new file"
+git push
+Remote repositorissa tehdään pull request ja merge new_temp to test
+Remote repositorissa tehdään pull request ja merge test to master
+Vaida test haaraan lokaalissa repositorissa
+git checkout test
+git pull
+Editoi tiedostoa remote repositoryssä test haarassa
+ja päivitä lokaalin test haara
+git checkout test
+git pull
+Vaihda new-temp haaraan
+git checkout new-temp
+Editoi tiedostoa lokaalissa repositoryssä new-temp haarassa
+ja vie muutos remoteen
+git add .
+git commit -m "edit"
+git push
+Yritä mergeä test haarasta new-temp haaraan
+git merge test
+CONFLICT file
+Editoi tiedostoon viimeisin version manuaalisesti mergeämällä
+ja vei muuton remoteen
+git add .
+git commit -m "merge"
+git push
+Remote repositorissa tehdään pull request ja merge new-temp to test
+Remote repositorissa tehdään pull request ja merge test to master
 
 
 
