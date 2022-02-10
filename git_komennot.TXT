@@ -150,6 +150,17 @@ git push
 Remote repositorissa tehdään pull request ja merge new-temp to test
 Remote repositorissa tehdään pull request ja merge test to master
 
+Edellä optimistisesti ajateltu, että manuaalinen merge on simppeli 
+ja olisi aikaa tehdä se. Jos kuitenkin yllättää tai on muuta tekemistä
+niin ota vain muistiin tiedotonimet tuossa CONFLICT kohdassa ja
+peru merge komento
+
+git merge --abort
+
+Nyt voit jatkaa muita tehtäviä ja palata myöhemmin tutkimaan mikä
+aiheuttaa conflictin tiedostoissa
+
+
 
 
 
