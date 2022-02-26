@@ -41,4 +41,22 @@ function fancyAlert(arg) {
   }
 }
 ```
+```python
+def sum(arg1, arg2):
+  return arg1 + arg2
+```
+```bash
+sudo nano /etc/ssh/sshd_config
+```
 
+ | name      | phone     |
+ | --------- | --------- |
+ | hani      | xxx       |
+ | mani      | $$$       |
+ 
+* [x] done 1
+* [x] done 2
+* []  not done 3
+ 
+ 
+ 
