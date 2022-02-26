@@ -56,7 +56,7 @@ sudo nano /etc/ssh/sshd_config
  
 * [x] done 1
 * [x] done 2
-* []  not done 3
+* [ ] not done 3
  
  
  
