@@ -5,29 +5,23 @@
 
 https://www.youtube.com/watch?v=lZAoFs75_cs
 
-https://code.visualstudio.com/docs/languages/markdown
+
 
 ### Network
 
 
-* moi
-1. moi
-1. moi
-
-_mm_
-
-*kk*
 
 
-> 
-
+```bash
+$ sudo apt install net-tools
+```
 List of commands
 ```bash
-ifconfig
-iwconfig
-ping
-arp
-netstat
-route
+$ ifconfig
+$ iwconfig
+$ ping
+$ arp
+$ netstat
+$ route
 ```
 
