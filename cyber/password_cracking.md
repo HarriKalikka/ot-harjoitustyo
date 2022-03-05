@@ -20,9 +20,9 @@ With userlist
 ```bash
 $ sudo hydra -L usernames.txt -P wordlist.txt 10.0.0.10 ssh
 ```
-and with one username example jhonny.
+and with one username example johnny.
 ```bash
-$ sudo hydra -l "jhonny" -P wordlist.txt 10.0.0.10 ssh
+$ sudo hydra -l "johnny" -P wordlist.txt 10.0.0.10 ssh
 ```
 Last parameter can be example ftp,telnet...
 
