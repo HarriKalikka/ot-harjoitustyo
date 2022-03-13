@@ -4,7 +4,7 @@
 https://www.youtube.com/watch?v=bXCeFPNWjsM
 
 
-## Rewerse shell and NetCat
+## Reverse shell and NetCat
 
 When get target connect to your computer using netcat with certain definitions and your computer also run netcat as listener it provide shell access to target.
 
