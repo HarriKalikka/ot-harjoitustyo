@@ -111,12 +111,12 @@ git help checkout
 Luodaan uusi haara ja siirrytään siihen
 git checkout -b test
 Listataan haarat
-git branch --list
+git branch -l
 Aseta upstearm haara
 git push -u origin test
 Tehdään toinen uusi haara
 git checkout -b new_temp
-git branch --list
+git branch -l
 git push -u origin new-temp
 Tee uusi tiedosto ja lisää muutokset stageen ja committoi
 ja push remote repositoriin
