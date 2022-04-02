@@ -1,7 +1,7 @@
 # CYBER STUDY
 
 
-## KaliLinux operation system commands
+## Kali Linux operation system commands
 
 https://www.youtube.com/watch?v=lZAoFs75_cs
 
@@ -35,4 +35,16 @@ $ arp
 $ netstat
 $ route
 ```
+
+### User management
+
+List of commands
+```bash
+$ chmod
+$ adduser
+$ /etc/passwd, /etc/shadow
+$ su
+$ sudo
+```
+
 
