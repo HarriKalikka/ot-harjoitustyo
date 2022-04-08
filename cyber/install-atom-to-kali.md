@@ -8,7 +8,7 @@ https://computingforgeeks.com/install-atom-text-editor-on-kali-linux/
 
 
 Install Atom editor from website packagecloud.io.
-Atom
+Atom install
 
 
 ### Installation
