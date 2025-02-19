@@ -90,12 +90,16 @@ Omalla koneella sopivassa hakemistossa:
 git init
 git config --global user.name "nimesi tänne"
 git config --global user.email "emalisi tänne"
+git config --global init.defaultBranch main
 Kopioi haluamasi filet hakemistoon
 Liitetään hakemisto repositoriin
 git remote add origin git@github.com:HarriKalikka/utilities.git
+# uusi repo
 git add .
 git commit -m "initial commit"
-git push --set-upsream origin master
+git push --set-upsream origin main
+# jo olemassa oleva repo (eka pull)
+git pull --set-upstream origin main
 
 
 Yleensä rerositoria editoi useampi ja haaroja on myös useita.
